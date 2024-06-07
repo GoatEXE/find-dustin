@@ -1,0 +1,26 @@
+body {
+    background-color: #DCDCDC;
+}
+
+.corner-image {
+    position: absolute;
+    width: 15rem;
+    height: 15rem; 
+}
+
+.bottom-left {
+    bottom: 10%;
+    left: 10%;
+}
+
+.top-right {
+    top: 10%;
+    right: 10%;
+}
+
+.content {
+    position: absolute;
+    padding-inline-end: 21%;
+    top: 21%;
+    left: 18%
+}
