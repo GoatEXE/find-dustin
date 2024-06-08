@@ -15,33 +15,58 @@ h1, p {
     color: var(--primary-color);
 }
 
-
-/* Images */
-.corner-image {
-    position: absolute;
-    width: 15rem;
-    height: 15rem; 
+a {
+    margin: 3px;
 }
 
-
-/* Everything else (: */
+/* Formatting */
 .lookatme {
     color: var(--complimentary-color);
 }
 
-.bottom-left {
-    bottom: 18%;
-    left: 10%;
-}
 
-.top-right {
-    top: 18%;
-    right: 10%;
-}
-
-.content {
+/* Section Container */
+.corner-highlight {
+    left: 30%;
+    top: 30%;
+    width: 40%;
+    height: 30%;
+    padding: 25px;
     position: absolute;
-    padding-inline-end: 21%;
-    top: 35%;
-    left: 20%
+}
+
+.corner-highlight::before,
+.corner-highlight::after {
+    content: '';
+    position: absolute;
+    border: 3px solid var(--complimentary-color); 
+    width: 75px;
+    height: 75px;
+    border-radius: 5%;
+}
+
+.corner-highlight::before {
+    top: -2.5px;
+    right: -2.5px;
+    border-left: none;
+    border-bottom: none;
+}
+
+.corner-highlight::after {
+    bottom: -2.5px;
+    left: -2.5px;
+    border-top: none;
+    border-right: none;
+}
+
+/* Icons */
+.icons {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
 }
