@@ -1,26 +1,47 @@
-body {
-    background-color: #DCDCDC;
+/* Variables */
+:root {
+    --bg-color: #123456;
+    --primary-color: #DCDCDC;
+    --secondary-color: #CCCCCC;
+    --complimentary-color: #DC7000;
 }
 
+/* HTML Elements */
+body {
+    background-color: var(--bg-color);
+}
+
+h1, p {
+    color: var(--primary-color);
+}
+
+
+/* Images */
 .corner-image {
     position: absolute;
     width: 15rem;
     height: 15rem; 
 }
 
+
+/* Everything else (: */
+.lookatme {
+    color: var(--complimentary-color);
+}
+
 .bottom-left {
-    bottom: 10%;
+    bottom: 18%;
     left: 10%;
 }
 
 .top-right {
-    top: 10%;
+    top: 18%;
     right: 10%;
 }
 
 .content {
     position: absolute;
     padding-inline-end: 21%;
-    top: 21%;
-    left: 18%
+    top: 35%;
+    left: 20%
 }
