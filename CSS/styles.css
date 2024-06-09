@@ -6,9 +6,14 @@
     --complimentary-color: #DC7000;
 }
 
+
 /* HTML Elements */
 body {
     background-color: var(--bg-color);
+}
+
+canvas {
+    display: block;
 }
 
 h1, p {
@@ -19,9 +24,23 @@ a {
     margin: 3px;
 }
 
-/* Formatting */
+
+/* Coloring */
 .lookatme {
     color: var(--complimentary-color);
+}
+
+
+/* Icons */
+.icons {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
 }
 
 
@@ -59,14 +78,26 @@ a {
     border-right: none;
 }
 
-/* Icons */
-.icons {
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
+
+/* Viewport dynamics */
+@media (max-width: 800px), (max-height: 600px) {
+    .corner-highlight {
+        left: 10%;
+        top: 33%;
+        width: 80%;
+    }
 }
 
-.icon {
-    width: 30px;
-    height: 30px;
+@media (max-width: 500px), (max-height: 550px) {
+    .corner-highlight {
+        top: 20%;
+        height: 50%;
+    }
+}
+
+@media (max-width: 350), (max-height: 450px) {
+    .corner-highlight {
+        top: 10%;
+        height: 80%;
+    }
 }
